@@ -5,7 +5,21 @@
 ```r
 #Load the ggplot2 library and set defaults for knitr
 library(ggplot2)
+```
+
+```
+## Warning: package 'ggplot2' was built under R version 3.2.2
+```
+
+```r
 library(data.table)
+```
+
+```
+## Warning: package 'data.table' was built under R version 3.2.2
+```
+
+```r
 knitr::opts_chunk$set(tidy=FALSE, fig.path="figures/")
 
 #Check if our data file exists and unzip if needed. Then read it into a data frame.
@@ -77,7 +91,7 @@ sum(is.na(base_data))
 ## [1] 2304
 ```
 
-Use the means for the 5-minute intervals as fillers for the missing values.
+Use the mean value of each of the 5-minute intervals top impute the missing values for the intervals.
 
 ```r
 # Create a new clean dataset with a placeholder column for data from our stepsPerInterval set
