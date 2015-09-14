@@ -53,7 +53,7 @@ What is the total number of missing values in the dataset?
 sum(is.na(base_data))
 ```
 
-Use the means for the 5-minute intervals as fillers for the missing values.
+Use the mean value of each of the 5-minute intervals top impute the missing values for the intervals.
 ```{r}
 # Create a new clean dataset with a placeholder column for data from our stepsPerInterval set
 cleaned_base_data <- merge(base_data, stepsPerInterval, by="interval", suffixes=c("", ".filled"))
