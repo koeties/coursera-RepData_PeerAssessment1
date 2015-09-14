@@ -67,11 +67,9 @@ img {
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
 <pre class="r"><code>#Load the ggplot2 library and set defaults for knitr
-library(ggplot2)</code></pre>
-<pre><code>## Warning: package 'ggplot2' was built under R version 3.2.2</code></pre>
-<pre class="r"><code>library(data.table)</code></pre>
-<pre><code>## Warning: package 'data.table' was built under R version 3.2.2</code></pre>
-<pre class="r"><code>knitr::opts_chunk$set(tidy=FALSE, fig.path=&quot;figures/&quot;)
+library(ggplot2)
+library(data.table)
+knitr::opts_chunk$set(tidy=FALSE, fig.path=&quot;figures/&quot;)
 
 #Check if our data file exists and unzip if needed. Then read it into a data frame.
 if(!file.exists(&quot;data/activity.csv&quot;)){

@@ -5,21 +5,7 @@
 ```r
 #Load the ggplot2 library and set defaults for knitr
 library(ggplot2)
-```
-
-```
-## Warning: package 'ggplot2' was built under R version 3.2.2
-```
-
-```r
 library(data.table)
-```
-
-```
-## Warning: package 'data.table' was built under R version 3.2.2
-```
-
-```r
 knitr::opts_chunk$set(tidy=FALSE, fig.path="figures/")
 
 #Check if our data file exists and unzip if needed. Then read it into a data frame.
